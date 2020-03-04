@@ -5,12 +5,19 @@ const DateTimeConverter = value => {
   return `'${d.toISOString()}'`;
 };
 
-Value2SQLValue.set("Date", DateTimeConverter)
-  .set("DateTime", DateTimeConverter)
-  .set("Time", DateTimeConverter);
+Value2SQLValue.set("date", DateTimeConverter)
+  .set("dateTime", DateTimeConverter)
 
-Value2SQLValue.set("Number", value => value);
+Value2SQLValue.set("number", value => value);
 
-Value2SQLValue.set("String", value => `'${value}'`);
+Value2SQLValue.set("text", value => `'${value}'`);
 
-Value2SQLValue.set("Boolean", value => (value ? 1 : 0));
+Value2SQLValue.set("id", value => `'${value}'`);
+
+Value2SQLValue.set("phone", value => `'${value}'`);
+
+Value2SQLValue.set("email", value => `'${value}'`);
+
+Value2SQLValue.set("id", value => `'${value}'`);
+
+Value2SQLValue.set("boolean", value => (value ? 1 : 0));

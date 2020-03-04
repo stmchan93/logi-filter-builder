@@ -20,7 +20,7 @@ function ValueInput(props) {
       Value2SQLValue.get(props.dataType)(date)
     );
   switch (props.dataType) {
-    case "Date":
+    case "date":
       return (
         <FormControl className={classes.formControl}>
           <DatePicker
@@ -37,7 +37,7 @@ function ValueInput(props) {
           />
         </FormControl>
       );
-    case "DateTime":
+    case "dateTime":
       return (
         <FormControl className={classes.formControl}>
           <DateTimePicker
@@ -54,22 +54,7 @@ function ValueInput(props) {
           />
         </FormControl>
       );
-    case "Time":
-      return (
-        <FormControl className={classes.formControl}>
-          <TimePicker
-            error={!(conditionColumn.value && conditionColumn.value.value)}
-            autoOk={true}
-            value={
-              conditionColumn.value && conditionColumn.value.value
-                ? conditionColumn.value.value
-                : new Date()
-            }
-            onChange={onDateInputChange}
-          />
-        </FormControl>
-      );
-    case "Number":
+    case "number":
       return (
         <FormControl className={classes.formControl}>
           <TextField
@@ -90,7 +75,7 @@ function ValueInput(props) {
           />
         </FormControl>
       );
-    case "Boolean":
+    case "boolean":
       return (
         <FormControl className={classes.formControl}>
           <Checkbox

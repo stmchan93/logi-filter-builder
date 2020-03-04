@@ -1,33 +1,51 @@
 export const operatorTypes = new Map();
 operatorTypes
-  .set("Number", [
+  .set("number", [
     { Label: "<", TranslateTo: " < " },
     { Label: "<=", TranslateTo: " <= " },
     { Label: "=", TranslateTo: " = " },
     { Label: ">", TranslateTo: " > " },
     { Label: ">=", TranslateTo: " >= " }
   ])
-  .set("DateTime", [
+  .set("dateTime", [
     { Label: "<", TranslateTo: " < " },
     { Label: "<=", TranslateTo: " <= " },
     { Label: "=", TranslateTo: " = " },
     { Label: ">", TranslateTo: " > " },
     { Label: ">=", TranslateTo: " >= " }
   ])
-  .set("Date", [
+  .set("date", [
     { Label: "<", TranslateTo: " < " },
     { Label: "<=", TranslateTo: " <= " },
     { Label: "=", TranslateTo: " = " },
     { Label: ">", TranslateTo: " > " },
     { Label: ">=", TranslateTo: " >= " }
   ])
-  .set("String", [
+  .set("text", [
     { Label: "Like", TranslateTo: " Like " },
     { Label: "Not Like", TranslateTo: " Not Like " },
     { Label: "=", TranslateTo: " = " },
     { Label: "!=", TranslateTo: " != " }
   ])
-  .set("Boolean", [
+  .set("id", [
+    { Label: "Like", TranslateTo: " Like " },
+    { Label: "Not Like", TranslateTo: " Not Like " },
+    { Label: "=", TranslateTo: " = " },
+    { Label: "!=", TranslateTo: " != " }
+  ])
+  .set("phone", [
+    { Label: "Like", TranslateTo: " Like " },
+    { Label: "Not Like", TranslateTo: " Not Like " },
+    { Label: "=", TranslateTo: " = " },
+    { Label: "!=", TranslateTo: " != " }
+  ])
+  .set("email", [
+    { Label: "Like", TranslateTo: " Like " },
+    { Label: "Not Like", TranslateTo: " Not Like " },
+    { Label: "=", TranslateTo: " = " },
+    { Label: "!=", TranslateTo: " != " }
+  ])
+  .set("boolean", [
     { Label: "=", TranslateTo: " = " },
     { Label: "!=", TranslateTo: " != " }
   ]);

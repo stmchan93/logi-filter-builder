@@ -399,12 +399,14 @@ LogiFilterBuilder.propTypes = {
       header: PropTypes.string.isRequired,
       accessor: PropTypes.string.isRequired,
       dataType: PropTypes.oneOf([
-        "String",
-        "Number",
-        "Date",
-        "DateTime",
-        "Time",
-        "Boolean"
+        "id",
+        "text",
+        "number",
+        "date",
+        "dateTime",
+        "phone",
+        "boolean",
+        "email",
       ]),
       isHidden: PropTypes.bool //if not available will be shown
     })
