@@ -27,6 +27,12 @@ operatorTypes
     { Label: "=", TranslateTo: " = " },
     { Label: "!=", TranslateTo: " != " }
   ])
+  .set("currency", [
+    { Label: "Like", TranslateTo: " Like " },
+    { Label: "Not Like", TranslateTo: " Not Like " },
+    { Label: "=", TranslateTo: " = " },
+    { Label: "!=", TranslateTo: " != " }
+  ])
   .set("id", [
     { Label: "Like", TranslateTo: " Like " },
     { Label: "Not Like", TranslateTo: " Not Like " },

@@ -20,4 +20,6 @@ Value2SQLValue.set("email", value => `'${value}'`);
 
 Value2SQLValue.set("id", value => `'${value}'`);
 
+Value2SQLValue.set("currency", value => `'${value}'`);
+
 Value2SQLValue.set("boolean", value => (value ? 1 : 0));

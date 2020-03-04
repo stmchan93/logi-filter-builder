@@ -407,6 +407,7 @@ LogiFilterBuilder.propTypes = {
         "phone",
         "boolean",
         "email",
+        "currency"
       ]),
       isHidden: PropTypes.bool //if not available will be shown
     })
