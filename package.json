@@ -16,7 +16,8 @@
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
     "docz:dev": "docz dev",
-    "docz:build": "docz build"
+    "docz:build": "docz build",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "material-ui-pickers": "^2.0.1",

@@ -79,6 +79,7 @@ class LogiFilterBuilder extends Component {
       value: undefined,
       operand: operandTypes.get("AND")
     });
+    console.log("Conditions: ", conditions);
     this.validateAndCreate(conditions);
   }
 
@@ -358,7 +359,7 @@ class LogiFilterBuilder extends Component {
                 this.addNewNestedCondition();
               }}
             >
-              {"+()"}
+              {"Add Nested"}
             </Button>
             <Button
               variant={"outlined"}
@@ -368,7 +369,7 @@ class LogiFilterBuilder extends Component {
                 this.addNewCondition();
               }}
             >
-              {"+"}
+              {"Add"}
             </Button>
             {!this.props.isNested && (
               <Button
